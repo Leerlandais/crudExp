@@ -1,3 +1,7 @@
+<?php
+if (isset($errorMessage)) : echo $errorMessage; endif;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

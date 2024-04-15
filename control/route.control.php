@@ -8,7 +8,7 @@ if(isset($_GET["page"])) {
             break;
         case 'login' :
             $title = "Log In Here";
-            include ("../view/login.php");
+            include ("../view/login.view.php");
             break;
         case "unlog" :
             include ("../controller/unlog.control.php");

@@ -8,6 +8,3 @@ try {
     die($errorMessage = "Problem connecting to the DB");
 }
 
-if (isset($db)) {
-    echo "all good";
-}

@@ -1,11 +1,11 @@
 <?php
 
 session_start();
-
+if (isset($errorMessage)) : echo $errorMessage; endif;
 if(!isset($_SESSION['monID']) || 
     $_SESSION['monID']!== session_id())
     {
-        header("location: ?p=login");
+        header("location: ?page=login");
         exit();
     }
 
