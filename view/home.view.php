@@ -23,7 +23,7 @@ $_SESSION['monID']!== session_id())
         <?php
         include("inc/header.php");
         if (isset($errorMessage)) : echo $errorMessage; endif;
-        var_dump($_SESSION);
+
     ?>
 <h1>made it this far</h1>
 <h2>Welcome <?=$_SESSION["name"]?></h2>

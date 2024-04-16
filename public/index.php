@@ -19,12 +19,10 @@ if (isset($_POST["login"],$_POST["pwd"])) {
         }
 
 
-        if (isset($_POST["create_login"],$_POST["create_pwd"])) {
-            $cleanedLogin = htmlspecialchars(strip_tags(trim($_POST["create_login"])));
-            $cleanedPwd = htmlspecialchars(strip_tags(trim($_POST["create_pwd"])));
-        
-            $createLogin = createLogin($db, $cleanedLogin, $cleanedPwd);
-                if (isset($createLogin)) {
-                    var_dump($createLogin);
-                }
-                }
+if (isset($_POST["create_login"],$_POST["create_pwd"])) {
+    $cleanedLogin = htmlspecialchars(strip_tags(trim($_POST["create_login"])));
+    $cleanedPwd = htmlspecialchars(strip_tags(trim($_POST["create_pwd"])));
+
+    $createLogin = createLogin($db, $cleanedLogin, $cleanedPwd);
+
+        }
