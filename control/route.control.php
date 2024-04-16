@@ -11,7 +11,7 @@ if(isset($_GET["page"])) {
             include ("../view/login.view.php");
             break;
         case "unlog" :
-            include ("../controller/unlog.control.php");
+            include ("../model/unlog.model.php");
             break;                        
         default :
             $title = "Can't find that page";
