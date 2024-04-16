@@ -4,7 +4,7 @@ session_start();
 if(!isset($_SESSION['monID']) || 
 $_SESSION['monID']!== session_id())
 {
-    header("location: ?page=login");
+    header("Location: ?page=login");
     exit();
 }
 

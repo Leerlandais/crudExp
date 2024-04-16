@@ -12,7 +12,11 @@ if(isset($_GET["page"])) {
             break;
         case "unlog" :
             include ("../model/unlog.model.php");
-            break;                        
+            break;
+        case "cont_user" :
+            $title = 'Change User Level';
+            include ("../view/usercont.view.php");
+            break;                                  
         default :
             $title = "Can't find that page";
             include("../view/error404.view.php");         
