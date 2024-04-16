@@ -9,6 +9,7 @@ function attemptLogin(PDO $db, $name, $pwd) {
 foreach($getAllUserNames as $check) {
     if($name === $check["nom_user"] && $pwd === $check["pwd_user"]){
         $allGood++;
+        break;
     }
     
 }
@@ -18,8 +19,10 @@ foreach($getAllUserNames as $check) {
         $_SESSION["userLVL"] = $check['lvl_user'];
         header("Location: ?page=home");        
     }else {
-        echo("no luck");
-}
+        $errorMessage = "Something went wrong with userLVL";
+        echo $errorMessage;
+    //    header ("Location: ?page=login");
+    }
 
 }
 

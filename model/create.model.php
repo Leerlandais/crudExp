@@ -14,7 +14,7 @@ function createLogin(PDO $db, $names, $pwd) {
         }
         }
 
-            $sql = "INSERT INTO `user_info`(`id_user`, `nom_user`, `pwd_user`, `lvl_user`) VALUES (NULL,?,?,'2')";
+            $sql = "INSERT INTO `user_info`(`id_user`, `nom_user`, `pwd_user`, `lvl_user`) VALUES (NULL,?,?,'0')";
             $stmt = $db->prepare($sql);
             $stmt->bindValue(1, $names);
             $stmt->bindValue(2, $pwd);
